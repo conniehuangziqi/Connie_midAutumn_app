@@ -1,0 +1,55 @@
+
+<resources>
+<string name="app_name">Connie_MidAutumn_GardenParty</string>
+<string name="title">NTU Mid-Autumn Festival GARDEN PARTY</string>
+    <string name="instruction">Click the location icons to unlock activities.</string>
+
+    <string name="activity_name">Activity completed will be displayed here.</string>
+
+
+
+<string name="string_mooncake">
+        Congratulations, you completed "Mooncake pantry".
+        There are 3 more steps.
+    </string>
+
+
+<string name="string_lantern">
+        Congratulations, you completed "Lantern workshop".
+        There are 2 more steps.
+    </string>
+
+<string name="string_riddles">
+        Congratulations, you completed "Riddles prize".
+        There is 1 more step.
+    </string>
+
+<string name="string_orchestra">
+        Congratulations, the garden party game is completed.
+        Yeah Yeah!
+    </string>
+
+
+<string name="score">Your total score.</string>
+<string name="notsatisfied">You need to clear prerequisite to enter this activity.</string>
+
+<string name="cantRedo_mooncake">
+        You cannot Redo it again.
+        Our mooncakes are limited.
+    </string>
+
+<string name="cantRedo_lantern">
+        You cannot Redo it again.
+        Our lanterns are limited.
+    </string>
+
+<string name="cantRedo_riddles">
+        You cannot Redo it again.
+        Our riddles are limited.
+    </string>
+
+<string name="cantRedo_orchestra">
+        You cannot Redo it again.
+        You can only watch the performance once.
+    </string>
+</resources>

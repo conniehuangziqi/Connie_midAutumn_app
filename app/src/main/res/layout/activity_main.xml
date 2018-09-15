@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/id_upperlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/title"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/id_instructions"
+            android:layout_below="@id/id_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/instruction"
+            android:textSize="16sp"
+            android:textColor="#888888"/>
+
+    <ImageView
+        android:id="@+id/id_imgntumap"
+        android:layout_below="@id/id_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ntumap" />
+
+
+    <ImageButton
+        android:id="@+id/button_mooncake"
+        android:onClick="click_mooncake"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="100dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/locationicon"/>
+    <TextView
+        android:id="@+id/text_mooncake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mooncake Pantry"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/button_mooncake"/>
+
+    <ImageButton
+        android:id="@+id/button_lantern"
+        android:onClick="click_lantern"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="280dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/locationicon"/>
+    <TextView
+        android:id="@+id/text_lantern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lantern workshop"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginLeft="260dp"
+        android:layout_below="@id/button_lantern"/>
+
+
+    <ImageButton
+        android:id="@+id/button_riddles"
+        android:onClick="click_riddles"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="260dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/locationicon"/>
+    <TextView
+        android:id="@+id/text_riddles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Riddles prize"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginLeft="260dp"
+        android:layout_below="@id/button_riddles"/>
+
+
+    <ImageButton
+        android:id="@+id/button_orchestra"
+        android:onClick="click_orchestra"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/locationicon"/>
+    <TextView
+        android:id="@+id/text_orchestra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chinese orchestra"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/button_orchestra"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/id_lowerlayout"
+        android:layout_below="@id/id_upperlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id_achievement"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Your achievement"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/id_activity_name"
+            android:layout_below="@id/id_achievement"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/activity_name"/>
+
+        <TextView
+            android:id="@+id/id_score"
+            android:layout_below="@id/id_activity_name"
+            android:layout_width="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="wrap_content"
+            android:text="@string/score"/>
+
+        <ImageView
+            android:id="@+id/id_activity_img"
+            android:layout_toRightOf="@id/id_activity_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imgjiayou"/>
+
+        <Button
+            android:id="@+id/button_reset"
+            android:onClick="click_reset"
+            android:layout_below="@id/id_score"
+            android:layout_toLeftOf="@id/id_activity_img"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="reset"
+            android:textAllCaps="false"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
